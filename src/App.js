@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React, {Component} from "react";
+import DishDetail from "./components/DishDetailComponent.js";
+import { DISHES } from './shared/dishes.js';
 import { Navbar, NavbarBrand } from 'reactstrap';
-import Menu from './components/MenuComponent';
-import { DISHES } from './shared/dishes';
-import './App.css';
 
 class App extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
       dishes: DISHES
-    };
-  }
+  };
+}
 
   render() {
     return (
@@ -21,11 +20,11 @@ class App extends Component {
             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
           </div>
         </Navbar>
-        <Menu dishes={this.state.dishes} />
+        <DishDetail dishes={this.state.dishes} />
       </div>
     );
   }
 }
 
-export default App;
 
+export default App;
