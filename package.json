@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
+    "cross-fetch": "2.1.0",
     "font-awesome": "^4.7.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -19,7 +20,7 @@
     "reactstrap": "^9.1.1",
     "redux": "^4.2.0",
     "redux-logger": "3.0.6",
-    "redux-thunk": "2.2.0",
+    "redux-thunk": "^2.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "autoprefixer": "10.4.5"
   }
 }
